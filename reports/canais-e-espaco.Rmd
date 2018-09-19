@@ -1,0 +1,181 @@
+---
+title: "Comportamentos apropriados. Ou não."
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(viridis)
+source(here::here("code/lib.R"))
+theme_set(theme_report())
+
+knitr::opts_chunk$set(tidy = FALSE,
+                      fig.width = 6,
+                      fig.height = 5,
+                      echo = FALSE)
+
+paleta = c("#404E4D",
+           "#92DCE5",
+           "#938BA1",
+           "#2D3142",
+           "#F4743B")
+```
+
+```{r read}
+dados = read_projectdata()
+```
+
+```{r}
+dadosl = dados %>% 
+    gather(key = "Acao", value = "Apropriado", -Situation)
+```
+
+```{r}
+dadosl %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum),
+            # x = Acao, 
+            y = Apropriado, 
+            group = Situation, 
+            color = Situation
+        )
+    ) + 
+    geom_line() + 
+    labs(
+        x = "Ação",
+        y = "Quão apropriada (média)"
+    )
+```
+
+```{r}
+dadosl %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum),
+            y = Apropriado, 
+            group = Situation,
+            fill = Situation
+        )
+    ) + 
+    geom_area(position = "stack") + 
+    # facet_wrap(~ reorder(Situation, Apropriado, mean)) + 
+    labs(
+        x = "Ação",
+        y = "Quão apropriada (média)"
+    )
+```
+
+
+```{r}
+dadosl %>% 
+    mutate(
+        destaque = case_when(
+            Situation == "Own room" ~ "Own room", 
+            Situation == "Job interview" ~ "Job interview", 
+            TRUE ~ "Outras",
+        )
+    ) %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum), 
+            y = Apropriado, 
+            group = Situation, 
+            color = destaque
+        )
+    ) + 
+    geom_line() + 
+    scale_color_manual(values = c("red", "gray", "green")) + 
+    labs(
+        x = "Ação",
+        y = "Quão apropriada (média)"
+    )
+```
+
+
+
+```{r}
+dadosl %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum), 
+            y = Apropriado, 
+            group = Situation,
+            color = Situation
+        )
+    ) + 
+    geom_point() + 
+    labs(
+        x = "Ação",
+        y = "Quão apropriada (média)"
+    )
+```
+
+
+
+```{r}
+dadosl %>% 
+    group_by(Acao, Situation) %>% 
+    summarise(Apropriado = mean(Apropriado)) %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum),
+            y = reorder(Situation, Apropriado, sum),
+            # x = Acao, 
+            # y = Situation,
+            fill = Apropriado
+        )
+    ) + 
+    geom_tile() + 
+    scale_fill_viridis() +
+    labs(
+        x = "Ação", 
+        y = "Situação"
+    )
+
+```
+
+```{r}
+dadosl %>% 
+    group_by(Acao, Situation) %>% 
+    summarise(Apropriado = mean(Apropriado)) %>% 
+    ggplot(
+        aes(
+            x = reorder(Acao, Apropriado, sum),
+            y = reorder(Situation, Apropriado, sum),
+            # x = Acao,
+            # y = Situation,
+            size = Apropriado, 
+            color = Apropriado
+        )
+    ) + 
+    geom_point() +
+    scale_color_viridis() +
+    labs(
+        x = "Ação", 
+        y = "Situação"
+    )
+
+```
+
+
+```{r}
+dadosl %>% 
+    ggplot(
+        aes(
+            x = Apropriado, 
+            fill = Situation
+        )
+    ) + 
+    geom_histogram(bins = 5) +
+    facet_grid(Situation ~ .) + 
+    labs(
+        x = "Ação",
+        y = "Quão apropriada (média)"
+    )
+```
+
