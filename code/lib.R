@@ -21,11 +21,15 @@ theme_report <- function(base_size = 11,
 }
 
 import_data <- function(){
-    
+    library(tidyverse)
+    readr::read_delim(here::here("data/dados-74.tsv"), delim = " ", 
+                      col_types = cols(.default = col_double(), 
+                                       Situation = col_character())) %>% 
+        readr::write_csv(here::here("data/dados-74.csv"))
 }
 
 read_projectdata <- function(){
-    readr::read_delim(here::here("data/dados-74.csv"), delim = " ", 
+    readr::read_csv(here::here("data/dados-74.csv"), 
                       col_types = cols(.default = col_double(), 
                                        Situation = col_character()))
 }

@@ -1,0 +1,226 @@
+Situation,Acao,Apropriado
+Class,Run,2.52
+Date,Run,5
+Bus,Run,1.44
+Family dinner,Run,2.56
+Park,Run,7.94
+Church,Run,1.38
+Job interview,Run,1.94
+Sidewalk,Run,5.58
+Movies,Run,2.46
+Bar,Run,1.96
+Elevator,Run,1.63
+Restroom,Run,2.83
+Own room,Run,6.15
+Dorm lounge,Run,4.4
+Football game,Run,4.12
+Class,Talk,6.21
+Date,Talk,8.56
+Bus,Talk,8.08
+Family dinner,Talk,8.52
+Park,Talk,8.42
+Church,Talk,3.29
+Job interview,Talk,8.46
+Sidewalk,Talk,8.19
+Movies,Talk,4.98
+Bar,Talk,8.25
+Elevator,Talk,7.4
+Restroom,Talk,7.25
+Own room,Talk,8.58
+Dorm lounge,Talk,7.88
+Football game,Talk,8.08
+Class,Kiss,2.1
+Date,Kiss,8.73
+Bus,Kiss,4.27
+Family dinner,Kiss,4.92
+Park,Kiss,7.71
+Church,Kiss,2.38
+Job interview,Kiss,1.08
+Sidewalk,Kiss,4.75
+Movies,Kiss,6.21
+Bar,Kiss,5.17
+Elevator,Kiss,4.79
+Restroom,Kiss,2.81
+Own room,Kiss,8.52
+Dorm lounge,Kiss,6.54
+Football game,Kiss,5.08
+Class,Write,8.17
+Date,Write,3.62
+Bus,Write,4.87
+Family dinner,Write,2.58
+Park,Write,7
+Church,Write,2.85
+Job interview,Write,4.85
+Sidewalk,Write,3.38
+Movies,Write,2.73
+Bar,Write,5.38
+Elevator,Write,3.04
+Restroom,Write,3.46
+Own room,Write,8.29
+Dorm lounge,Write,7.73
+Football game,Write,4.56
+Class,Eat,4.23
+Date,Eat,7.79
+Bus,Eat,5.48
+Family dinner,Eat,8.44
+Park,Eat,8.13
+Church,Eat,1.38
+Job interview,Eat,1.73
+Sidewalk,Eat,4.83
+Movies,Eat,7.48
+Bar,Eat,7.67
+Elevator,Eat,5.1
+Restroom,Eat,2.35
+Own room,Eat,7.94
+Dorm lounge,Eat,7.19
+Football game,Eat,8.04
+Class,Sleep,3.6
+Date,Sleep,3.77
+Bus,Sleep,7.04
+Family dinner,Sleep,2.29
+Park,Sleep,5.63
+Church,Sleep,1.77
+Job interview,Sleep,0.75
+Sidewalk,Sleep,1.46
+Movies,Sleep,4.08
+Bar,Sleep,2.9
+Elevator,Sleep,1.31
+Restroom,Sleep,2.83
+Own room,Sleep,8.85
+Dorm lounge,Sleep,6.08
+Football game,Sleep,2.98
+Class,Mumble,3.62
+Date,Mumble,3.12
+Bus,Mumble,5.17
+Family dinner,Mumble,2.54
+Park,Mumble,5.4
+Church,Mumble,3.52
+Job interview,Mumble,1.31
+Sidewalk,Mumble,4.96
+Movies,Mumble,4.13
+Bar,Mumble,6.21
+Elevator,Mumble,5.12
+Restroom,Mumble,5.04
+Own room,Mumble,7.67
+Dorm lounge,Mumble,5.5
+Football game,Mumble,5.23
+Class,Read,7.27
+Date,Read,2.88
+Bus,Read,7.17
+Family dinner,Read,3.96
+Park,Read,7.77
+Church,Read,3.58
+Job interview,Read,2.48
+Sidewalk,Read,4.81
+Movies,Read,1.73
+Bar,Read,4.71
+Elevator,Read,4.48
+Restroom,Read,4.75
+Own room,Read,8.58
+Dorm lounge,Read,8.56
+Football game,Read,3.69
+Class,Fight,1.21
+Date,Fight,3.58
+Bus,Fight,1.52
+Family dinner,Fight,1.67
+Park,Fight,3.06
+Church,Fight,0.62
+Job interview,Fight,1.04
+Sidewalk,Fight,1.46
+Movies,Fight,1.37
+Bar,Fight,1.9
+Elevator,Fight,1.58
+Restroom,Fight,1.77
+Own room,Fight,4.25
+Dorm lounge,Fight,2.4
+Football game,Fight,2.04
+Class,Belch,1.77
+Date,Belch,2.23
+Bus,Belch,2.15
+Family dinner,Belch,2.5
+Park,Belch,5
+Church,Belch,1.42
+Job interview,Belch,1.21
+Sidewalk,Belch,2.81
+Movies,Belch,2.58
+Bar,Belch,5.04
+Elevator,Belch,2.54
+Restroom,Belch,5.12
+Own room,Belch,6.81
+Dorm lounge,Belch,4
+Football game,Belch,3.85
+Class,Argue,5.33
+Date,Argue,4.5
+Bus,Argue,4.17
+Family dinner,Argue,3.25
+Park,Argue,5.06
+Church,Argue,1.92
+Job interview,Argue,1.83
+Sidewalk,Argue,4.08
+Movies,Argue,1.71
+Bar,Argue,4.31
+Elevator,Argue,2.58
+Restroom,Argue,3.48
+Own room,Argue,7.52
+Dorm lounge,Argue,4.88
+Football game,Argue,4.98
+Class,Jump,1.79
+Date,Jump,4.42
+Bus,Jump,3.12
+Family dinner,Jump,2.29
+Park,Jump,7.42
+Church,Jump,1.71
+Job interview,Jump,1.48
+Sidewalk,Jump,3.54
+Movies,Jump,2.31
+Bar,Jump,3.75
+Elevator,Jump,2.12
+Restroom,Jump,3.65
+Own room,Jump,6.73
+Dorm lounge,Jump,4.58
+Football game,Jump,7.12
+Class,Cry,2.21
+Date,Cry,3.04
+Bus,Cry,3.08
+Family dinner,Cry,3.21
+Park,Cry,5.21
+Church,Cry,3.13
+Job interview,Cry,1.37
+Sidewalk,Cry,3.71
+Movies,Cry,7.15
+Bar,Cry,3.44
+Elevator,Cry,3.48
+Restroom,Cry,4.79
+Own room,Cry,8
+Dorm lounge,Cry,3.88
+Football game,Cry,4.31
+Class,Laugh,6.23
+Date,Laugh,8
+Bus,Laugh,7.1
+Family dinner,Laugh,7.13
+Park,Laugh,8.1
+Church,Laugh,2.6
+Job interview,Laugh,5.88
+Sidewalk,Laugh,7.4
+Movies,Laugh,7.94
+Bar,Laugh,8.23
+Elevator,Laugh,6.77
+Restroom,Laugh,5.9
+Own room,Laugh,8.17
+Dorm lounge,Laugh,7.75
+Football game,Laugh,7.9
+Class,Shout,1.94
+Date,Shout,3.79
+Bus,Shout,3
+Family dinner,Shout,1.96
+Park,Shout,6.92
+Church,Shout,1.33
+Job interview,Shout,1.65
+Sidewalk,Shout,4.88
+Movies,Shout,2.42
+Bar,Shout,4.13
+Elevator,Shout,1.73
+Restroom,Shout,3.52
+Own room,Shout,6.44
+Dorm lounge,Shout,3.6
+Football game,Shout,7.94
