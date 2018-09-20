@@ -22,10 +22,20 @@ theme_report <- function(base_size = 11,
 
 import_data <- function(){
     library(tidyverse)
-    readr::read_delim(here::here("data/dados-74.tsv"), delim = " ", 
+    importados = readr::read_delim(here::here("data/dados-74.tsv"), delim = " ", 
                       col_types = cols(.default = col_double(), 
-                                       Situation = col_character())) %>% 
+                                       Situation = col_character())) 
+    
+    importados %>% 
         readr::write_csv(here::here("data/dados-74.csv"))
+    
+    importados %>% 
+        nest(-Situation) %>% 
+        jsonlite::write_json(here::here("data/dados-74.json"))
+    
+    importados %>% 
+        gather(key = "Acao", value = "Apropriado", -Situation) %>% 
+        readr::write_csv(here::here("data/dados-74-long.csv"))
 }
 
 read_projectdata <- function(){
